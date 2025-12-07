@@ -36,8 +36,8 @@ impl InnerBounds {
             Padding(p) => {
                 let x = outer_bounds.x + p.left;
                 let y = outer_bounds.y + p.top;
-                let width = outer_bounds.width - p.horizontal();
-                let height = outer_bounds.width - p.vertical();
+                let width = outer_bounds.width - (p.left + p.right);
+                let height = outer_bounds.width - (p.top + p.bottom);
                 Rectangle {
                     x,
                     y,

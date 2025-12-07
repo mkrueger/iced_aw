@@ -102,8 +102,8 @@ pub fn pad_rectangle(rect: Rectangle, padding: Padding) -> Rectangle {
     Rectangle {
         x: rect.x - padding.left,
         y: rect.y - padding.top,
-        width: rect.width + padding.horizontal(),
-        height: rect.height + padding.vertical(),
+        width: rect.width + padding.left + padding.right,
+        height: rect.height + padding.top + padding.bottom,
     }
 }
 

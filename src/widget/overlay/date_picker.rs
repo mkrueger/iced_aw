@@ -570,10 +570,10 @@ where
 
         let mut node = Node::with_children(
             Size::new(
-                col.bounds().width + PADDING.horizontal(),
+                col.bounds().width + (PADDING.left + PADDING.right),
                 col.bounds().height
                     + cancel_button.bounds().height
-                    + PADDING.vertical()
+                    + (PADDING.top + PADDING.bottom)
                     + SPACING.0,
             ),
             vec![col, cancel_button, submit_button],
