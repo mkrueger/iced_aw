@@ -262,7 +262,7 @@ impl App {
                     .width(Length::Fill)
                     .on_press(Message::Debug("Button".into()))
                 ),
-                (checkbox("Checkbox", self.check).on_toggle(Message::CheckChange)
+                (checkbox(self.check).label("Checkbox").on_toggle(Message::CheckChange)
                     .width(Length::Fill)
                 ),
                 (
