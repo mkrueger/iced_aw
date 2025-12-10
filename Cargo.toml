@@ -75,8 +75,8 @@ features = ["advanced"]
 
 [dependencies]
 iced = { git = "https://github.com/iced-rs/iced.git", branch = "master", features = ["tokio", "svg", "image", "wgpu"] }
-iced_core = { git = "https://github.com/iced-rs/iced.git", branch = "master", features = ["tokio", "svg", "image", "wgpu"] }
-iced_widget = { git = "https://github.com/iced-rs/iced.git", branch = "master", features = ["tokio", "svg", "image", "wgpu"] }
+iced_core = { git = "https://github.com/iced-rs/iced.git", branch = "master" }
+iced_widget = { git = "https://github.com/iced-rs/iced.git", branch = "master" }
 
 
 cfg-if = "1.0"
