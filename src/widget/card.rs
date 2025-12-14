@@ -855,6 +855,7 @@ fn draw_head<Message, Theme, Renderer>(
                 line_height: LineHeight::Relative(1.3),
                 shaping,
                 wrapping: Wrapping::default(),
+                hint_factor: None,
             },
             Point::new(close_bounds.center_x(), close_bounds.center_y()),
             style.close_color,

@@ -273,6 +273,7 @@ where
                     line_height: LineHeight::default(),
                     shaping: iced_widget::text::Shaping::Advanced,
                     wrapping: Wrapping::default(),
+                    hint_factor: None,
                 },
                 Point::new(bounds.x, bounds.center_y()),
                 text_color,

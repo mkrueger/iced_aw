@@ -1480,6 +1480,7 @@ fn draw_digital_clock<Message, Theme>(
                 line_height: text::LineHeight::Relative(1.3),
                 shaping: text::Shaping::Basic,
                 wrapping: Wrapping::default(),
+                hint_factor: None,
             },
             Point::new(up_bounds.center_x(), up_bounds.center_y()),
             style
@@ -1501,6 +1502,7 @@ fn draw_digital_clock<Message, Theme>(
                 line_height: text::LineHeight::Relative(1.3),
                 shaping: text::Shaping::Basic,
                 wrapping: Wrapping::default(),
+                hint_factor: None,
             },
             Point::new(center_bounds.center_x(), center_bounds.center_y()),
             style
@@ -1524,6 +1526,7 @@ fn draw_digital_clock<Message, Theme>(
                 line_height: text::LineHeight::Relative(1.3),
                 shaping: text::Shaping::Basic,
                 wrapping: Wrapping::default(),
+                hint_factor: None,
             },
             Point::new(down_bounds.center_x(), down_bounds.center_y()),
             style
@@ -1576,6 +1579,7 @@ fn draw_digital_clock<Message, Theme>(
             line_height: text::LineHeight::Relative(1.3),
             shaping: text::Shaping::Basic,
             wrapping: Wrapping::default(),
+            hint_factor: None,
         },
         Point::new(
             hour_minute_separator.bounds().center_x(),
@@ -1615,6 +1619,7 @@ fn draw_digital_clock<Message, Theme>(
                 line_height: text::LineHeight::Relative(1.3),
                 shaping: text::Shaping::Basic,
                 wrapping: Wrapping::default(),
+                hint_factor: None,
             },
             Point::new(
                 minute_second_separator.bounds().center_x(),
@@ -1656,6 +1661,7 @@ fn draw_digital_clock<Message, Theme>(
                 line_height: text::LineHeight::Relative(1.3),
                 shaping: text::Shaping::Basic,
                 wrapping: Wrapping::default(),
+                hint_factor: None,
             },
             Point::new(period.bounds().center_x(), period.bounds().center_y()),
             style[&StyleState::Active].text_color,

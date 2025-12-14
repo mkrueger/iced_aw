@@ -232,6 +232,7 @@ where
                         align_y: Vertical::Top,
                         shaping: text::Shaping::Advanced,
                         wrapping: Wrapping::default(),
+                        hint_factor: None,
                     };
 
                     let _ = state.values[id].update(text);

@@ -1426,6 +1426,7 @@ fn rgba_color(
                 line_height: text::LineHeight::Relative(1.3),
                 shaping: text::Shaping::Advanced,
                 wrapping: Wrapping::default(),
+                hint_factor: None,
             },
             Point::new(
                 label_layout.bounds().center_x(),
@@ -1510,6 +1511,7 @@ fn rgba_color(
                 line_height: iced_widget::text::LineHeight::Relative(1.3),
                 shaping: iced_widget::text::Shaping::Advanced,
                 wrapping: Wrapping::default(),
+                hint_factor: None,
             },
             Point::new(
                 value_layout.bounds().center_x(),
@@ -1652,6 +1654,7 @@ fn hex_text(
             line_height: text::LineHeight::Relative(1.3),
             shaping: text::Shaping::Basic,
             wrapping: Wrapping::default(),
+            hint_factor: None,
         },
         Point::new(bounds.center_x(), bounds.center_y()),
         Color {
